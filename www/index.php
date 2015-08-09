@@ -1,17 +1,6 @@
 <?php
+require __DIR__ . '/models/photo.php';
 
-?>
+$items = Photo_getAll();
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>MyTestIndex</title>
-</head>
-<body>
-<h1>Lorem ipsum dolor.</h1>
-<a href="calc.php"><b>Calc</b></a>
-
-</body>
-</html>
-
+include __DIR__ . '/views/index.php';
